@@ -192,6 +192,4 @@ coefficients = stacking_model.final_estimator_.best_estimator_.coef_
 for name, coef in zip([m[0] for m in stacking_model.estimators], coefficients):
     print(f"{name.upper():<10} 权重系数: {coef:.4f}")
 
-# 输出特征重要性
-print("\n=== 特征重要性（基于树模型） ===")
-print(feature_importance.to_string(index=False, float_format="%.4f"))
+
